@@ -4,6 +4,7 @@ metadata:
   name: "{{  .Chart.Name }}-deployment"
   labels:
     chart: '{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}'
+    test: node
 spec:
   replicas: {{ .Values.replicaCount }}
   strategy:
