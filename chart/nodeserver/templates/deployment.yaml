@@ -23,6 +23,7 @@ spec:
         app: "{{  .Chart.Name }}-selector"
         version: "current"
         test: node
+        matan: test
     spec:
       containers:
       - name: "{{  .Chart.Name  }}"
